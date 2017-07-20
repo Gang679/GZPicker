@@ -1,0 +1,451 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D6383671F205A2300167D27 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D6383661F205A2300167D27 /* main.m */; };
+		4D63836A1F205A2300167D27 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D6383691F205A2300167D27 /* AppDelegate.m */; };
+		4D63836D1F205A2300167D27 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D63836C1F205A2300167D27 /* ViewController.m */; };
+		4D6383701F205A2300167D27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D63836E1F205A2300167D27 /* Main.storyboard */; };
+		4D6383721F205A2300167D27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D6383711F205A2300167D27 /* Assets.xcassets */; };
+		4D6383751F205A2300167D27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D6383731F205A2300167D27 /* LaunchScreen.storyboard */; };
+		4D63838F1F205DEA00167D27 /* UIView+GZKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D63838E1F205DEA00167D27 /* UIView+GZKit.m */; };
+		4D6383FF1F209B2A00167D27 /* GZPickerToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D6383FE1F209B2A00167D27 /* GZPickerToolbar.m */; };
+		4D6384021F209C4B00167D27 /* GZSinglePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D6384011F209C4B00167D27 /* GZSinglePicker.m */; };
+		4D6384071F209E6000167D27 /* NSCalendar+GZpick.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D6384041F209E6000167D27 /* NSCalendar+GZpick.m */; };
+		4D6384081F209E6000167D27 /* GZPickerDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D6384061F209E6000167D27 /* GZPickerDate.m */; };
+		4D63840B1F209FF800167D27 /* VitalPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D63840A1F209FF800167D27 /* VitalPicker.m */; };
+		4D63840D1F20A0CA00167D27 /* areaThree.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4D63840C1F20A0CA00167D27 /* areaThree.plist */; };
+		4D6384101F20A0EC00167D27 /* GZPickerAreaThree.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D63840F1F20A0EC00167D27 /* GZPickerAreaThree.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4D6383621F205A2300167D27 /* GZPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GZPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D6383661F205A2300167D27 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4D6383681F205A2300167D27 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4D6383691F205A2300167D27 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4D63836B1F205A2300167D27 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4D63836C1F205A2300167D27 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4D63836F1F205A2300167D27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4D6383711F205A2300167D27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4D6383741F205A2300167D27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4D6383761F205A2300167D27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D63838D1F205DEA00167D27 /* UIView+GZKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GZKit.h"; sourceTree = "<group>"; };
+		4D63838E1F205DEA00167D27 /* UIView+GZKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GZKit.m"; sourceTree = "<group>"; };
+		4D6383901F205E9500167D27 /* GZ.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GZ.pch; sourceTree = "<group>"; };
+		4D6383961F20815500167D27 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		4D6383981F20818A00167D27 /* libz.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.tbd; path = usr/lib/libz.1.tbd; sourceTree = SDKROOT; };
+		4D63839A1F20835100167D27 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4D63839C1F20836100167D27 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4D63839E1F20846E00167D27 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		4D6383A01F20848B00167D27 /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
+		4D6383A21F2084DF00167D27 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		4D6383FD1F209B2A00167D27 /* GZPickerToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GZPickerToolbar.h; sourceTree = "<group>"; };
+		4D6383FE1F209B2A00167D27 /* GZPickerToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GZPickerToolbar.m; sourceTree = "<group>"; };
+		4D6384001F209C4B00167D27 /* GZSinglePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GZSinglePicker.h; sourceTree = "<group>"; };
+		4D6384011F209C4B00167D27 /* GZSinglePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GZSinglePicker.m; sourceTree = "<group>"; };
+		4D6384031F209E6000167D27 /* NSCalendar+GZpick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCalendar+GZpick.h"; sourceTree = "<group>"; };
+		4D6384041F209E6000167D27 /* NSCalendar+GZpick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCalendar+GZpick.m"; sourceTree = "<group>"; };
+		4D6384051F209E6000167D27 /* GZPickerDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GZPickerDate.h; sourceTree = "<group>"; };
+		4D6384061F209E6000167D27 /* GZPickerDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GZPickerDate.m; sourceTree = "<group>"; };
+		4D6384091F209FF800167D27 /* VitalPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VitalPicker.h; sourceTree = "<group>"; };
+		4D63840A1F209FF800167D27 /* VitalPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VitalPicker.m; sourceTree = "<group>"; };
+		4D63840C1F20A0CA00167D27 /* areaThree.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = areaThree.plist; sourceTree = "<group>"; };
+		4D63840E1F20A0EC00167D27 /* GZPickerAreaThree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GZPickerAreaThree.h; sourceTree = "<group>"; };
+		4D63840F1F20A0EC00167D27 /* GZPickerAreaThree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GZPickerAreaThree.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4D63835F1F205A2300167D27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4D6383591F205A2300167D27 = {
+			isa = PBXGroup;
+			children = (
+				4D6383641F205A2300167D27 /* GZPicker */,
+				4D6383631F205A2300167D27 /* Products */,
+				4D6383951F20815400167D27 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4D6383631F205A2300167D27 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4D6383621F205A2300167D27 /* GZPicker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4D6383641F205A2300167D27 /* GZPicker */ = {
+			isa = PBXGroup;
+			children = (
+				4D6383681F205A2300167D27 /* AppDelegate.h */,
+				4D6383691F205A2300167D27 /* AppDelegate.m */,
+				4D63836B1F205A2300167D27 /* ViewController.h */,
+				4D63836C1F205A2300167D27 /* ViewController.m */,
+				4D6383821F205D4D00167D27 /* GZpicker */,
+				4D63836E1F205A2300167D27 /* Main.storyboard */,
+				4D6383711F205A2300167D27 /* Assets.xcassets */,
+				4D6383A41F208B2E00167D27 /* GZConfig */,
+				4D6383731F205A2300167D27 /* LaunchScreen.storyboard */,
+				4D6383761F205A2300167D27 /* Info.plist */,
+				4D6383651F205A2300167D27 /* Supporting Files */,
+			);
+			path = GZPicker;
+			sourceTree = "<group>";
+		};
+		4D6383651F205A2300167D27 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4D6383901F205E9500167D27 /* GZ.pch */,
+				4D63838D1F205DEA00167D27 /* UIView+GZKit.h */,
+				4D63838E1F205DEA00167D27 /* UIView+GZKit.m */,
+				4D6383661F205A2300167D27 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4D6383821F205D4D00167D27 /* GZpicker */ = {
+			isa = PBXGroup;
+			children = (
+				4D6383B01F208B5900167D27 /* 三围 */,
+				4D6383AC1F208B5100167D27 /* 单数组形式 */,
+				4D6383851F205D4D00167D27 /* 地区 */,
+				4D6383861F205D4D00167D27 /* 日期 */,
+			);
+			path = GZpicker;
+			sourceTree = "<group>";
+		};
+		4D6383851F205D4D00167D27 /* 地区 */ = {
+			isa = PBXGroup;
+			children = (
+				4D63840E1F20A0EC00167D27 /* GZPickerAreaThree.h */,
+				4D63840F1F20A0EC00167D27 /* GZPickerAreaThree.m */,
+				4D63840C1F20A0CA00167D27 /* areaThree.plist */,
+			);
+			path = "地区";
+			sourceTree = "<group>";
+		};
+		4D6383861F205D4D00167D27 /* 日期 */ = {
+			isa = PBXGroup;
+			children = (
+				4D6384031F209E6000167D27 /* NSCalendar+GZpick.h */,
+				4D6384041F209E6000167D27 /* NSCalendar+GZpick.m */,
+				4D6384051F209E6000167D27 /* GZPickerDate.h */,
+				4D6384061F209E6000167D27 /* GZPickerDate.m */,
+			);
+			path = "日期";
+			sourceTree = "<group>";
+		};
+		4D6383951F20815400167D27 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D6383A21F2084DF00167D27 /* libsqlite3.0.tbd */,
+				4D6383A01F20848B00167D27 /* libz.1.2.5.tbd */,
+				4D63839E1F20846E00167D27 /* AudioToolbox.framework */,
+				4D63839C1F20836100167D27 /* Foundation.framework */,
+				4D63839A1F20835100167D27 /* UIKit.framework */,
+				4D6383981F20818A00167D27 /* libz.1.tbd */,
+				4D6383961F20815500167D27 /* libz.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4D6383A41F208B2E00167D27 /* GZConfig */ = {
+			isa = PBXGroup;
+			children = (
+				4D6383FD1F209B2A00167D27 /* GZPickerToolbar.h */,
+				4D6383FE1F209B2A00167D27 /* GZPickerToolbar.m */,
+			);
+			path = GZConfig;
+			sourceTree = "<group>";
+		};
+		4D6383AC1F208B5100167D27 /* 单数组形式 */ = {
+			isa = PBXGroup;
+			children = (
+				4D6384001F209C4B00167D27 /* GZSinglePicker.h */,
+				4D6384011F209C4B00167D27 /* GZSinglePicker.m */,
+			);
+			path = "单数组形式";
+			sourceTree = "<group>";
+		};
+		4D6383B01F208B5900167D27 /* 三围 */ = {
+			isa = PBXGroup;
+			children = (
+				4D6384091F209FF800167D27 /* VitalPicker.h */,
+				4D63840A1F209FF800167D27 /* VitalPicker.m */,
+			);
+			path = "三围";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4D6383611F205A2300167D27 /* GZPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D6383791F205A2300167D27 /* Build configuration list for PBXNativeTarget "GZPicker" */;
+			buildPhases = (
+				4D63835E1F205A2300167D27 /* Sources */,
+				4D63835F1F205A2300167D27 /* Frameworks */,
+				4D6383601F205A2300167D27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GZPicker;
+			productName = GZPicker;
+			productReference = 4D6383621F205A2300167D27 /* GZPicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4D63835A1F205A2300167D27 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Mr.quan;
+				TargetAttributes = {
+					4D6383611F205A2300167D27 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 57233LSM9E;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 4D63835D1F205A2300167D27 /* Build configuration list for PBXProject "GZPicker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4D6383591F205A2300167D27;
+			productRefGroup = 4D6383631F205A2300167D27 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4D6383611F205A2300167D27 /* GZPicker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4D6383601F205A2300167D27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D6383751F205A2300167D27 /* LaunchScreen.storyboard in Resources */,
+				4D6383721F205A2300167D27 /* Assets.xcassets in Resources */,
+				4D63840D1F20A0CA00167D27 /* areaThree.plist in Resources */,
+				4D6383701F205A2300167D27 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4D63835E1F205A2300167D27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D63836D1F205A2300167D27 /* ViewController.m in Sources */,
+				4D63836A1F205A2300167D27 /* AppDelegate.m in Sources */,
+				4D6384021F209C4B00167D27 /* GZSinglePicker.m in Sources */,
+				4D63838F1F205DEA00167D27 /* UIView+GZKit.m in Sources */,
+				4D63840B1F209FF800167D27 /* VitalPicker.m in Sources */,
+				4D6384081F209E6000167D27 /* GZPickerDate.m in Sources */,
+				4D6383FF1F209B2A00167D27 /* GZPickerToolbar.m in Sources */,
+				4D6383671F205A2300167D27 /* main.m in Sources */,
+				4D6384101F20A0EC00167D27 /* GZPickerAreaThree.m in Sources */,
+				4D6384071F209E6000167D27 /* NSCalendar+GZpick.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4D63836E1F205A2300167D27 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D63836F1F205A2300167D27 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4D6383731F205A2300167D27 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D6383741F205A2300167D27 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4D6383771F205A2300167D27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4D6383781F205A2300167D27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4D63837A1F205A2300167D27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 57233LSM9E;
+				GCC_PREFIX_HEADER = /Users/xinshijie/Desktop/GZPicker/GZPicker/GZ.pch;
+				INFOPLIST_FILE = GZPicker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = gangzi.GZPicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s arm64";
+			};
+			name = Debug;
+		};
+		4D63837B1F205A2300167D27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 57233LSM9E;
+				GCC_PREFIX_HEADER = /Users/xinshijie/Desktop/GZPicker/GZPicker/GZ.pch;
+				INFOPLIST_FILE = GZPicker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = gangzi.GZPicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s arm64";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4D63835D1F205A2300167D27 /* Build configuration list for PBXProject "GZPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D6383771F205A2300167D27 /* Debug */,
+				4D6383781F205A2300167D27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D6383791F205A2300167D27 /* Build configuration list for PBXNativeTarget "GZPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D63837A1F205A2300167D27 /* Debug */,
+				4D63837B1F205A2300167D27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4D63835A1F205A2300167D27 /* Project object */;
+}

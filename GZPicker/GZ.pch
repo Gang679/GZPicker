@@ -1,0 +1,128 @@
+//
+//  GZ.pch
+//  MeiChou
+//
+//  Created by xinshijie on 16/5/21.
+//  Copyright © 2016年 Mr.quan. All rights reserved.
+//
+
+//#ifndef GZ_pch
+//#define GZ_pch
+
+
+#ifdef __OBJC__
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+#import "AppDelegate.h"
+
+// 通知
+#define GZ_Noti [NSNotificationCenter defaultCenter]
+/*! 6、获取sharedApplication */
+#define GZSharedApplication [UIApplication sharedApplication]
+//view背景颜色
+#define GZColor [UIColor colorWithRed:242.0/255.0f green:242.0/255.0f blue:242.0/255.0f alpha:1]
+//字体颜色
+#define GZTextColor [UIColor colorWithRed:102.0/255.0f green:102.0/255.0f blue:102.0/255.0f alpha:1]
+//分栏线条颜色
+#define GZLineColor [UIColor colorWithRed:102.0/255.0f green:102.0/255.0f blue:102.0/255.0f alpha:0.3]
+//导航栏标题字体大小
+#define GZNavigationFont [UIFont boldSystemFontOfSize:16]
+/**
+ *  border颜色
+ */
+#define GZBorderColor [UIColor colorWithRed:(225)/255.0 green:(225)/255.0 blue:(225)/255.0 alpha:1.0]
+
+#define XFHeadViewH [UIScreen mainScreen].bounds.size.width * 0.6 + 100
+
+#define GZNavigationBarY 64
+
+#define GZControlSystemHeight 44
+
+#define GZMarginSmall  5 
+
+#define GZMargin  10 
+
+#define GZMarginBig  16
+
+#define GZControlNormalHeight  36
+
+#define GZTitleFout [UIFont systemFontOfSize:15 * GZScreenWidth / 375];
+
+#define GZLittleTitleFout [UIFont systemFontOfSize:14 * GZScreenWidth / 375];
+
+/**
+ *  2.返回一个RGBA格式的UIColor对象
+ */
+#define GZ_COLOR(r, g, b, a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
+
+/**
+ *  4.弱引用
+ */
+#define GZWeakSelf __weak typeof(self) weakSelf = self;
+//屏幕宽度
+#define GZScreenWidth [UIScreen mainScreen].bounds.size.width
+//屏幕高度
+#define GZScreenHeight [UIScreen mainScreen].bounds.size.height
+
+//设备判断
+#define GZDevice_Is_iPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+#define GZDevice_Is_iPhone6 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(750, 1334), [[UIScreen mainScreen] currentMode].size) : NO)
+#define GZDevice_Is_iPhone6Plus ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size) : NO)
+//还有判断ios8和ios9系统（ios9上的字号要比ios8上的字号都要略小一号）的宏：
+//判断设备系统是否是9.0或以上
+#define IOS_VERSION_9_OR_ABOVE (([[[UIDevice currentDevice] systemVersion] floatValue] >= 9.0)? (YES):(NO))
+//判断设备系统是否是9.0以上（不含9.0）
+#define IOS_VERSION_8_OR_ABOVE (([[[UIDevice currentDevice] systemVersion] floatValue] <9.0)? (YES):(NO))
+//根据设备不同  返回不同的字号(内联函数)
+static inline int sizeValue(int sizefont) {
+    if(GZDevice_Is_iPhone5)
+    {
+        if(IOS_VERSION_9_OR_ABOVE)
+            return  sizefont-1;
+        return sizefont;
+    }else if (GZDevice_Is_iPhone6)
+    {
+        if(IOS_VERSION_9_OR_ABOVE)
+            return  sizefont+1;
+        return sizefont+2;
+    }
+    else if(GZDevice_Is_iPhone6Plus)
+    {
+        if(IOS_VERSION_9_OR_ABOVE)
+            return  sizefont+2;
+        return sizefont+3;
+    }else
+    {
+        if(IOS_VERSION_9_OR_ABOVE)
+            return  sizefont-1;
+        return sizefont;
+    }
+}
+//正常字体
+#define GZFont(sizefont) [UIFont systemFontOfSize:sizeValue(sizefont)]
+
+#define GZTableViewCellStyle UITableViewCellStyleDefault 
+
+// 主题颜色
+#define GZMAINCOLOR [[UIColor alloc]initWithRed:250/255.0 green:54/255.0 blue:103/255.0 alpha:1]
+// 点击渐变颜色
+#define GZMaterial_MAINCOLOR [[UIColor alloc]initWithRed:250/255.0 green:54/255.0 blue:103/255.0 alpha:0.5]
+
+/*! 用safari打开URL */
+#define GZ_OpenUrl(urlStr) [BASharedApplication openURL:[NSURL URLWithString:urlStr]]
+// RGB颜色
+#define GZ_RGB(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
+////相对iphone6 屏幕比
+//#define KWidth_Scale    [UIScreen mainScreen].bounds.size.width/375.0f
+
+#define GZLog(FORMAT, ...) fprintf(stderr,"%s:%d\t%s\n",[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
+
+#import "UIView+GZKit.h"
+#import "GZPickerToolbar.h"
+
+
+#endif /* GZ_pch */
+
